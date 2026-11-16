@@ -1,0 +1,35 @@
+{
+  "name": "codex-claude-bridge",
+  "version": "0.5.0",
+  "description": "Use Claude models (Opus, Sonnet, Haiku, Fable) inside OpenAI Codex through the official Claude Code CLI, next to GPT models",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/server.ts",
+    "dev": "bun --watch src/server.ts",
+    "test": "bun test",
+    "typecheck": "bunx tsc --noEmit",
+    "check": "bun run typecheck && bun test"
+  },
+  "keywords": [
+    "bun",
+    "claude",
+    "claude-code",
+    "codex",
+    "openai-codex",
+    "responses-api",
+    "proxy"
+  ],
+  "license": "MIT",
+  "engines": {
+    "bun": ">=1.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.2",
+    "typescript": "5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/An0ymOnTelegram/codex-claude-bridge.git"
+  }
+}
